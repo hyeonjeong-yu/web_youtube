@@ -12,23 +12,31 @@ import Video from './pages/Home'
 import Search from './pages/Search'
 import Not from './pages/Not'
 
+import Header from './components/section/Header'
+import Main from './components/section/Main'
+import Footer from './components/section/Footer'
+
 const App = () => {
   return (
-
-    // 해당 Components를 불러올 수 있는 페이지 구성
-    <BrowserRouter>
-        <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/today' element={<Today/>}/>
-            <Route path='/developer' element={<Developer/>}/>
-            <Route path='/websiste' element={<Website/>}/>
-            <Route path='/port' element={<Port/>}/>
-            <Route path='/youtube' element={<Youtube/>}/>
-            <Route path='/channel/:channelID' element={<Channel/>}/>
-            <Route path='/video/:videoID' element={<Video/>}/>
-            <Route path='/search/:searchID' element={<Search/>}/>
-            <Route path='*' element={<Not/>}/>
-        </Routes>
+    
+      <BrowserRouter>
+        <Header />
+        <Main>
+            <Routes>
+            {/* 해당 Components를 불러올 수 있는 페이지 구성 */}
+                <Route path='/' element={<Home/>}/>
+                <Route path='/today' element={<Today/>}/>
+                <Route path='/developer' element={<Developer/>}/>
+                <Route path='/websiste' element={<Website/>}/>
+                <Route path='/port' element={<Port/>}/>
+                <Route path='/youtube' element={<Youtube/>}/>
+                <Route path='/channel/:channelID' element={<Channel/>}/>
+                <Route path='/video/:videoID' element={<Video/>}/>
+                <Route path='/search/:searchID' element={<Search/>}/>
+                <Route path='*' element={<Not/>}/>
+            </Routes>
+        </Main>
+        <Footer />
     </BrowserRouter>
   )
 }

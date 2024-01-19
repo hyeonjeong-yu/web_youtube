@@ -1,0 +1,22 @@
+// section layout
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 260px;
+    height: 100%;
+    z-index: 10000;
+    background-color: #000000;
+}
+#main {
+    max-width: 2000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-left: 260px;
+    background-color: #111111;
+}
+#footer {
+    text-align: center;
+    background-color: #333333;
+    padding: 20px 20px 20px 260px;
+}
