@@ -1,0 +1,52 @@
+.header__logo {
+    border-bottom: 1px solid var(--black200);
+
+    a {
+        display: flex;
+        padding: 10px;
+        margin: 10px;
+
+        em {
+            width: 40px;
+            height: 40px;
+            display: block;
+            background-color: var(--red);
+            margin-right: 10px;
+            animation: ani 15s 1s ease-in-out infinite;
+        }
+        span {
+            font-size: 20px;
+            line-height: 1;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+    }
+}
+.header__menu {
+    padding: 10px 0px;
+    .menu {
+        li {
+            a{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+.header__sns {
+
+}
+
+@keyframes ani {
+    0% {
+        transform: rotate(0) scale(1);
+        border-radius: 0;
+    }
+    50% {
+        transform: rotate(720deg) scale(0.5);
+        border-radius: 20;
+    }
+    100% {
+        transform: rotate(0) scale(1);
+        border-radius: 0;
+    }
+}
