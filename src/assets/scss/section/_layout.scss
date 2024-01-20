@@ -14,10 +14,10 @@
     min-height: 100vh;
     margin: 0 auto;
     padding-left: 260px;
-    background-color: #111111;
+    background-color: var(--white400);
 }
 #footer {
     text-align: center;
-    background-color: #333333;
+    background-color: var(--white500);
     padding: 20px 20px 20px 260px;
 }

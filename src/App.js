@@ -27,7 +27,7 @@ const App = () => {
                 <Route path='/' element={<Home/>}/>
                 <Route path='/today' element={<Today/>}/>
                 <Route path='/developer' element={<Developer/>}/>
-                <Route path='/websiste' element={<Website/>}/>
+                <Route path='/website' element={<Website/>}/>
                 <Route path='/port' element={<Port/>}/>
                 <Route path='/youtube' element={<Youtube/>}/>
                 <Route path='/channel/:channelID' element={<Channel/>}/>
