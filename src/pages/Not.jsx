@@ -1,10 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import Main from '../components/section/Main';
 
 const Not = props => {
-  return (
-    <div>Not</div>
-  )
+    return (
+        <Main>Not</Main>
+    )
 }
 
 Not.propTypes = {}

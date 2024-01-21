@@ -1,9 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import Main from '../components/section/Main';
 
 const Channel = props => {
   return (
-    <div>Channel</div>
+    <Main>Channel</Main>
   )
 }
 

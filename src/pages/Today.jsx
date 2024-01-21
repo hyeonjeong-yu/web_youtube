@@ -1,10 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import Main from '../components/section/Main';
 
 const Today = props => {
-  return (
-    <div>Today</div>
-  )
+    return (
+    <Main>Today</Main>
+    )
 }
 
 Today.propTypes = {}

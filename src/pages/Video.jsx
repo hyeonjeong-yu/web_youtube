@@ -1,10 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import Main from '../components/section/Main';
 
 const Video = props => {
-  return (
-    <div>Video</div>
-  )
+    return (
+        <Main>Video</Main>
+    )
 }
 
 Video.propTypes = {}

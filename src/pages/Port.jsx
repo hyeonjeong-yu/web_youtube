@@ -1,10 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import Main from '../components/section/Main';
 
 const Port = props => {
-  return (
-    <div>Port</div>
-  )
+    return (
+        <Main>Port</Main>
+    )
 }
 
 Port.propTypes = {}

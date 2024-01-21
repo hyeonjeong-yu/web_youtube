@@ -1,10 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import Main from '../components/section/Main'
 
 const Home = props => {
-  return (
-    <div>Home</div>
-  )
+    return (
+        <Main>
+            Home
+        </Main>
+    )
 }
 
 Home.propTypes = {}

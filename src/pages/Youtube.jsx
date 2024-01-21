@@ -1,10 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import Main from '../components/section/Main';
 
 const Youtube = props => {
-  return (
-    <div>Youtube</div>
-  )
+    return (
+        <Main>Youtube</Main>
+    )
 }
 
 Youtube.propTypes = {}
