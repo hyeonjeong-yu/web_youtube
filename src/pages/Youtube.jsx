@@ -3,7 +3,9 @@ import Main from '../components/section/Main';
 
 const Youtube = props => {
     return (
-        <Main>Youtube</Main>
+        <Main title='유튜브 클론' description='유튜브 클론 페이지입니다.'>
+            Youtube
+        </Main>
     )
 }
 

@@ -3,7 +3,9 @@ import Main from '../components/section/Main';
 
 const Search = props => {
     return (
-        <Main>Search</Main>
+        <Main title='검색' description='유튜브 검색 페이지입니다.'>
+            Search
+        </Main>
     )
 }
 

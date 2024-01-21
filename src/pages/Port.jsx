@@ -3,7 +3,9 @@ import Main from '../components/section/Main';
 
 const Port = props => {
     return (
-        <Main>Port</Main>
+        <Main title='포트폴리오 사이트' description='포트폴리오 사이트 페이지입니다.'>
+            Port
+        </Main>
     )
 }
 
