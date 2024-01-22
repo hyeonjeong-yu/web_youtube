@@ -26,3 +26,23 @@
     font-size: 0.8rem;
     border-top: 1px solid var(--white500);
 }
+
+// 반응형 작업
+@media (max-width: 800px) {
+    #header {
+        left: -260px;
+
+        h1 {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    }
+    #main {
+        padding: 0;
+    }
+    #footer {
+        width: 100%;
+        margin-left: 0;
+    }
+}

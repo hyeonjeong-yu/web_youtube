@@ -5,7 +5,7 @@ const Footer = props => {
     return (
         <footer id='footer' role='contentinfo'>
             <a href='/' rel='noopenner noreferrer'>
-                youtobe.com
+                youtube.com
             </a>
         </footer>
     )
