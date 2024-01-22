@@ -60,3 +60,13 @@ section {
         }
     }
 }
+
+// 비디오 로딩 효과
+.isLoading {
+    opacity: 0;
+    transition: opacity .5s;
+}
+.isLoaded {
+    opacity: 1;
+    transition: opacity .5s;
+}
