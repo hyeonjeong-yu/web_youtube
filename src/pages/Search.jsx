@@ -5,14 +5,13 @@ import { useParams } from 'react-router-dom'
 import Main from '../components/section/Main'
 
 import VideoSearch from '../components/videos/VideoSearch'
-import { fetchFromAPI } from '../utils/api'
 
 const Search = () => {
     const { searchID } = useParams();
     // 현재 경로에서 searchId 파라미터(사용자가 입력한 검색어)를 가져온다.
 
     const [ videos, setVideos ] = useState([]);
-    // 검색 결과로 받아온 비디오 목록을 빈 배열로 설정된 videos 상태 변수에 저장
+    // 검색 결과로 나온 비디오 목록을 빈 배열로 설정된 videos 상태 변수에 저장
     
     useEffect(() => {
         // 컴포넌트가 마운트되거나 searchId가 변경될 때마다 api 호출하여 검색 결과 가져온다.
@@ -20,7 +19,7 @@ const Search = () => {
 
         // ver.1 (YOUTUBE)
         fetch(
-            `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${searchID}&type=video&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`,
+            `https://youtube.googleapis.com/youtube/v3/search?part=snippet&chart=mostPopular&maxResults=48&q=${searchID}&type=video&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`,
             // q: 검색하고 싶은 단어
         )
         .then(response => response.json())
