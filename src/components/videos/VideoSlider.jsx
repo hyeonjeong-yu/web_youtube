@@ -9,6 +9,7 @@ import { Navigation } from 'swiper/modules';
 
 const VideoSlider = ({videos, title, id}) => {
 
+    // 로딩 효과 넣기
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         setTimeout(() => {
